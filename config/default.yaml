@@ -1,0 +1,62 @@
+#################################
+# Version & Seed Settings
+#################################
+
+version: 'default'
+seed: 1
+
+#################################
+# Reaction Rate Coefficient
+#################################
+
+# either single value for discrete rho 
+rho: 1000 
+# or list with [min, max] for continuous rho
+#rho: [1000, 10000]
+
+#################################
+# Model Settings
+#################################
+
+# ('standard-ANN', 'wave-ANN', 'standard-PINN', or 'wave-PINN')
+model: 'wave-PINN'
+# residual weighting (only applied by PINN models)
+lambda_F: 1
+
+#################################
+# Neural Network Settings
+#################################
+
+# Number of hidden layers
+N_hidden: 2
+# Number of neurons per layer
+N_neurons: 20
+# Activation function for hidden layers
+activation: 'tanh'
+
+#################################
+# Data Settings
+#################################
+
+# Initial and boundary conditions points
+N_ICBC: 1024
+# Collocation points
+N_col: 1024
+
+#################################
+# Training settings
+#################################
+
+# Number of training epochs
+N_epochs: 50000
+# learning rate for optimizer
+learning_rate: 0.001
+decay_rate: 0.95
+
+#################################
+# Callback and Log settings
+#################################
+
+freq_log: 100
+freq_print: 100
+keys_print: ['loss_ICBC', 'loss_F', 'loss_test']
