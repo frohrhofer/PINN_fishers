@@ -1,0 +1,52 @@
+{
+  "upload_type": "software",
+  "title": "Code for: Approximating families of sharp solutions to Fisher's equation with physics-informed neural networks",
+  "version": "v1.0.0",
+  "language": "eng",
+  "access_right": "open",
+  "license": "MIT",
+  "description": "<p>Python implementation accompanying the article <em>Approximating families of sharp solutions to Fisher's equation with physics-informed neural networks</em>, Computer Physics Communications 307 (2025) 109422, https://doi.org/10.1016/j.cpc.2024.109422.</p><p>The code trains physics-informed neural networks (PINNs) on Fisher's equation with large reaction rate coefficients. It includes the residual weighting scheme, the specialized network architecture for traveling wave solutions, and the generalization across multiple reaction rate coefficients described in the paper. Individual runs are configured through YAML files in the <code>config</code> directory.</p><p>Abstract of the article: This paper employs physics-informed neural networks (PINNs) to solve Fisher's equation, a fundamental reaction-diffusion system with both simplicity and significance. The focus is on investigating Fisher's equation under conditions of large reaction rate coefficients, where solutions exhibit steep traveling waves that often present challenges for traditional numerical methods. To address these challenges, a residual weighting scheme is introduced in the network training to mitigate the difficulties associated with standard PINN approaches. Additionally, a specialized network architecture designed to capture traveling wave solutions is explored. The paper also assesses the ability of PINNs to approximate a family of solutions by generalizing across multiple reaction rate coefficients. The proposed method demonstrates high effectiveness in solving Fisher's equation with large reaction rate coefficients and shows promise for meshfree solutions of generalized reaction-diffusion systems.</p>",
+  "creators": [
+    {
+      "name": "Rohrhofer, Franz Martin",
+      "affiliation": "Know Center Research GmbH (Austria)",
+      "orcid": "0000-0002-8228-7759"
+    },
+    {
+      "name": "Posch, Stefan",
+      "affiliation": "LEC GmbH"
+    },
+    {
+      "name": "Gößnitzer, Clemens",
+      "affiliation": "LEC GmbH"
+    },
+    {
+      "name": "Geiger, Bernhard",
+      "affiliation": "Know Center Research GmbH (Austria)",
+      "orcid": "0000-0003-3257-743X"
+    }
+  ],
+  "keywords": [
+    "Physics-informed neural network",
+    "Reaction-diffusion system",
+    "Fisher's equation",
+    "Sharp solution",
+    "Traveling wave",
+    "Continuous parameter space",
+    "Green AI",
+    "Python"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1016/j.cpc.2024.109422",
+      "relation": "isSupplementTo",
+      "resource_type": "publication-article",
+      "scheme": "doi"
+    }
+  ],
+  "communities": [
+    {
+      "identifier": "enfield"
+    }
+  ]
+}
