@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23337596.svg)](https://doi.org/10.5281/zenodo.23337596)
+
 # Approximating Families of Sharp Solutions to Fisher's Equation with Physics-Informed Neural Networks
 Code to paper: https://doi.org/10.1016/j.cpc.2024.109422
 
